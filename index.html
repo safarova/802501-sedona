@@ -4,14 +4,6 @@
    <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
- 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Седона</title>
-</head>
-
 <body>
   <header class="main-header">
     <nav class="main-navigation">
@@ -30,18 +22,17 @@
         </li>
       </ul>
     </nav>
-    <a class="header-small-logo">
-      <img src="img/small-logo.png" width="140" height="70" alt="Маленький логотип Седона">
+    <a class="logo">
+      <img src="img/small-logo.png" width="140" height="70" alt="логотип Седона">
     </a>
   </header>
   <main>
-      <div>
+      <section class="promo">
       <img src="img/backgroundphoto.jpg" width="200" height="100" alt="Wellcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
-    </div>
+      </section>
     <section class="reasons">
       <h1 class="slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
       <p class="reasons-title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-      <h2 class="visually-hidden">Перечень причин</h2>
       <ul class="reasons-list">
         <!--1-я строка-->
        <li class="main-reasons blue-reasons">
@@ -50,6 +41,8 @@
           <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
           <img src="img/localhouse.jpg" width="40" height="20" alt="Местный дом">
           <!--2-я строка/вложенный список-->
+          </li>
+          <li>
           <ul class="additional-reasons-list">
             <li class="additional-reasons">
               <!--здесь будет иконка-псевдоэлемент-->
@@ -77,6 +70,7 @@
         </li>
         <!--4-я строка-->
         <li class="main-reasons grey-reasons">
+          <li>
           <h3>Небольщая площадь</h3>
           <span>№3</span>
           <p>Все достопримечательности находятся очень близко</p>
@@ -115,7 +109,7 @@
     </ul>
     <div>
       <p>Website by</p>
-      <a class="footer-html-academy" href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="footer-html-academy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
         <img src="img/logo-html-academy.svg" width="200" height="100" alt="Лого htmlacademy">
       </a>
     </div>
