@@ -6,6 +6,9 @@
 </head>
 <body>
   <header class="main-header">
+      <a class="logo" href="index.html">
+          <img src="img/small-logo.png" width="20" height="10" alt="лого Седона">
+        </a>
     <nav class="main-navigation">
       <ul class="site-navigation">
         <li>
@@ -22,11 +25,62 @@
         </li>
       </ul>
     </nav>
-    <a class="logo" href="index.html">
-      <img src="img/small-logo.png" width="20" height="10" alt="лого Седона">
-    </a>
   </header>
   <main>
+      <h1 class="visually-hidden">Поиск гостиницы</h1>
+      <section class="filters">
+          <h2 class="visually-hidden">Фильтр для гостиниц</h2>
+          <form class="filter" method="get" action="#">
+            <fieldset>
+              <legend>Инфраструктура:</legend>
+              <ul>
+                <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" id="filter-swimming-pool" type="checkbox" name="swimming-pool" checked>
+                    <label for="filter-swimming-pool">Бассейн</label>
+                </li>
+                <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" id="filter-parking" type="checkbox" name="parking">
+                  <label for="filter-parking">Парковка</label>
+                </li>
+                <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" id="filter-wi-fi" type="checkbox" name="wi-fi">
+                  <label for="filter-wi-fi">wi-fi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Тип жилья:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" id="filter-hotel" type="checkbox" name="hotel" checked>
+                  <label for="filter-hotel">Гостиница</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" id="filter-motel" type="checkbox" name="motel" checked>
+                  <label for="filter-motel">Мотель</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" id="filter-apartment" type="checkbox" name="apartment" checked>
+                  <label for="filter-apartment">Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="price-filter">
+              <p class="day-price">Стоимость в сутки (р):</p>
+              <p class="price-range">
+                <span>от 0</span>
+                <span>до 3000</span>                      
+              </p>
+              <button type="submit" class="filter-button button">Показать</button>
+            </div>
+          </form>      
+      </section>
+      <span>Найдено: 3</span>
+      <span>Сортировка:</span>
+      <span class="search-results-current"><a href="#">По цене</a></span>
+      <span><a href="#">По типу</a></span>
+      <span><a href="#">По рейтингу</a></span>                
+  </section>
     <section class="search-result">
       <h1 class="visually-hidden">Каталог отелей</h1>
       <ul class="hotels-catalog">
@@ -70,8 +124,8 @@
             <img src="img/hotel3.png" width="135" height="90" alt="Отель Poco Diablo">
           <div class="hotel-description">
             <h3>
-                <a href="#">Villas At Poco Diablo</a>
-              </h3>
+              <a href="#">Villas At Poco Diablo</a>
+            </h3>
             <div class="left-col">
               <p class="hotel-type">Апартаменты</p>
               <a class="button" href="hotel-poco-diablo-main.html">Подробнее</a>
