@@ -7,7 +7,7 @@
 <body>
   <header class="main-header">
       <a class="logo" href="index.html">
-          <img src="img/small-logo.png" width="20" height="10" alt="лого Седона">
+          <img src="img/small-logo.png" width="138" height="70" alt="лого Седона">
         </a>
     <nav class="main-navigation">
       <ul class="site-navigation">
@@ -27,16 +27,15 @@
     </nav>
   </header>
   <main>
-      <h1 class="visually-hidden">Поиск гостиницы</h1>
       <section class="filters">
           <h2 class="visually-hidden">Фильтр для гостиниц</h2>
-          <form class="filter" method="get" action="#">
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
               <legend>Инфраструктура:</legend>
               <ul>
                 <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" id="filter-swimming-pool" type="checkbox" name="swimming-pool" checked>
-                    <label for="filter-swimming-pool">Бассейн</label>
+                    <input class="visually-hidden filter-input filter-input-checkbox" id="swimming-pool" type="checkbox" name="swimming-pool" checked>
+                    <label for="swimming-pool">Бассейн</label>
                 </li>
                 <li class="filter-option">
                     <input class="visually-hidden filter-input filter-input-checkbox" id="filter-parking" type="checkbox" name="parking">
@@ -75,11 +74,12 @@
             </div>
           </form>      
       </section>
+      <section class="results">
       <span>Найдено: 3</span>
       <span>Сортировка:</span>
-      <span class="search-results-current"><a href="#">По цене</a></span>
-      <span><a href="#">По типу</a></span>
-      <span><a href="#">По рейтингу</a></span>                
+      <a href="#">По цене</a>
+      <a href="#">По типу</a>
+      <a href="#">По рейтингу</a>                
   </section>
     <section class="search-result">
       <h1 class="visually-hidden">Каталог отелей</h1>
@@ -160,7 +160,7 @@
     <div>
       <p>Website by</p>
       <a class="footer-html-academy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-        <img src="img/logo-html-academy.svg" width="200" height="100" alt="Лого htmlacademy">
+        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Лого htmlacademy">
       </a>
     </div>
   </footer>
